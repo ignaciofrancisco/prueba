@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     public function registerWeb(Request $request)
     {
-        // Validaciones en español
+        // Validaciones 
         $request->validate([
             'nombre' => 'required|string|max:255',
             'correo' => 'required|email|unique:usuarios,correo',
